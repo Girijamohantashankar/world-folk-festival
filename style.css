@@ -1,25 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Rose:wght@400;700&display=swap');
 * {
     margin: 0;
     padding: 0;
     background-color:
         #2D2D2D;
 }
+body{
+    font-family: 'Red Rose', cursive !important;
+    color: #fff !important;
+}
 
 a,
 li {
     color: #fff !important;
-}
 
+}
+.navbar-brand{
+    margin-left: 10px;
+    margin-top: 5px;
+    color: #E78830 !important;
+    font-weight: 700;
+}
 .navbar-nav {
     margin-left: 100px;
 }
 
 .navbar-nav li {
-    margin-left: 50px;
+    margin-left: 20px;
 }
 
 .carousel-item img {
-    height: 620px;
+    height: 750px;
 }
 
 .navbar-toggler {
@@ -30,3 +41,65 @@ li {
 .navbar-toggler-icon {
     background-color: #fff;
 }
+.running_text{
+    padding-top: 50px;
+    width: 100%;
+}
+.running_text h4{
+    color: #fff;
+  
+}
+.text_content{
+    padding: 100px 50px 0 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+.content-details{
+    width: 636px;
+}
+.content-details h3{
+    color: #E78830;
+}
+.content-details p{
+    padding-top: 20px;
+}
+.content-details button{
+    color: #E78830;
+    height: 47px;
+    width: 165px;
+    border-radius: 8px;
+    background-color: #fff;
+    outline: none;
+    border: none;
+}
+.content-details button:hover{
+    background-color: #E78830;
+    color: #fff;
+   
+}
+.view_logo img{
+    animation: rotate-animation 10s infinite linear;
+}
+@keyframes rotate-animation {
+	0% {
+		transform: rotate(0deg);
+  }
+  50% {
+		transform: rotate(180deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+
+
+
+
+@media screen and (max-width: 480px) {
+   .carousel-item img {
+    height: 320px;
+}
+  }
