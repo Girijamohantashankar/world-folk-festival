@@ -20,6 +20,9 @@ li {
   color: #fff !important;
 
 }
+.image_logo{
+  width: 60px;
+}
 
 .navbar-brand {
   margin-left: 10px;
