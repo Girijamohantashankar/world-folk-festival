@@ -1,105 +1,363 @@
 @import url('https://fonts.googleapis.com/css2?family=Red+Rose:wght@400;700&display=swap');
+
 * {
-    margin: 0;
-    padding: 0;
-    background-color:
-        #2D2D2D;
+  margin: 0;
+  padding: 0;
+
 }
-body{
-    font-family: 'Red Rose', cursive !important;
-    color: #fff !important;
+
+body {
+  font-family: 'Red Rose', cursive !important;
+  color: #fff !important;
+  margin: 0px;
+  padding: 0px;
+  background-color:
+    #2D2D2D !important;
 }
 
 a,
 li {
-    color: #fff !important;
+  color: #fff !important;
 
 }
-.navbar-brand{
-    margin-left: 10px;
-    margin-top: 5px;
-    color: #E78830 !important;
-    font-weight: 700;
+
+.navbar-brand {
+  margin-left: 10px;
+  margin-top: 5px;
+  color: #E78830 !important;
+  font-weight: 700;
 }
+
 .navbar-nav {
-    margin-left: 100px;
+  margin-left: 100px;
 }
 
 .navbar-nav li {
-    margin-left: 20px;
+  margin-left: 20px;
 }
-
+.nav-item a:hover{
+  color: #E78830 !important;
+}
 .carousel-item img {
-    height: 750px;
+  height: 790px;
 }
 
 .navbar-toggler {
-    border-color: #fff !important;
-    /* background-color: transparent !important; */
+  border-color: #fff !important;
+  /* background-color: transparent !important; */
 }
 
 .navbar-toggler-icon {
-    background-color: #fff;
+  background-color: #fff;
 }
-.running_text{
-    padding-top: 50px;
-    width: 100%;
+
+.running_text {
+  padding-top: 50px;
+  width: 100%;
 }
-.running_text h4{
-    color: #fff;
-  
+
+.running_text marquee {
+  background-color: #8d633d;
 }
-.text_content{
-    padding: 100px 50px 0 50px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    
+
+.running_text h4 {
+  color: #fff;
+  background-color: transparent;
+
 }
-.content-details{
-    width: 636px;
+
+.text_content {
+  padding: 100px 50px 0 50px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
 }
-.content-details h3{
-    color: #E78830;
+
+.content-details {
+  width: 636px;
 }
-.content-details p{
-    padding-top: 20px;
+
+.content-details h3 {
+  color: #E78830;
 }
-.content-details button{
-    color: #E78830;
-    height: 47px;
-    width: 165px;
-    border-radius: 8px;
-    background-color: #fff;
-    outline: none;
-    border: none;
+
+.content-details p {
+  padding-top: 20px;
 }
-.content-details button:hover{
-    background-color: #E78830;
-    color: #fff;
-   
+
+.content-details button {
+  color: #E78830;
+  height: 47px;
+  width: 165px;
+  border-radius: 8px;
+  background-color: #fff;
+  outline: none;
+  border: none;
 }
-.view_logo img{
-    animation: rotate-animation 10s infinite linear;
+
+.content-details button:hover {
+  background-color: #E78830;
+  color: #fff;
+
 }
+
+.view_logo img {
+  animation: rotate-animation 10s infinite linear;
+  max-width: 266px;
+}
+
 @keyframes rotate-animation {
-	0% {
-		transform: rotate(0deg);
+  0% {
+    transform: rotate(0deg);
   }
+
   50% {
-		transform: rotate(180deg);
-	}
-	100% {
-		transform: rotate(360deg);
-	}
+    transform: rotate(180deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* PRODUCTS */
+.product {
+
+  position: relative;
+  overflow: hidden;
+  padding: 40px;
+}
+
+.product-category {
+  padding: 0 10vw;
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 40px;
+  text-transform: capitalize;
+}
+
+.product-container {
+  padding: 0 10vw;
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+
+.product-container::-webkit-scrollbar {
+  display: none;
+}
+
+.product-card {
+  flex: 0 0 auto;
+  width: 250px;
+  height: 450px;
+  margin-right: 40px;
+}
+
+.product-image {
+  position: relative;
+  width: 100%;
+  height: 380px;
+  overflow: hidden;
+}
+
+.product-thumb {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.pre-btn,
+.nxt-btn {
+  border: none;
+  width: 10vw;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  z-index: 8;
+  background-color: #2D2D2D;
+}
+
+.pre-btn {
+  left: 0;
+  transform: rotate(180deg);
+}
+
+.nxt-btn {
+  right: 0;
+}
+
+.pre-btn img,
+.nxt-btn img {
+  opacity: 0.5;
+}
+
+.pre-btn:hover img,
+.nxt-btn:hover img {
+  opacity: 1;
+}
+
+
+
+/* -----performance_content---- */
+
+.performance_header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+}
+
+.performance_header h2 {
+  font-size: 32px;
+  border-bottom: 2px solid #E78830;
+
+}
+
+.performance_header p {
+  font-size: 20px;
+  padding: 10px 10px 0px 10px;
+}
+
+.time_table {
+  /* width: 50%; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.table {
+  width: 50% !important;
+  border-collapse: collapse;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+tr {
+  border-bottom: 2px solid #f0e9e9;
+
+}
+
+tbody tr:last-child {
+  border: 0;
+}
+
+thead tr {
+  border-bottom: 2px solid #ece8e8;
+}
+
+tr,
+td,
+th {
+  padding: 20px;
+  background-color: #83796e !important;
+  color: #fff !important;
+  font-size: 20px;
+}
+
+th {
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.event_schedule {
+  padding-top: 50px;
+  display: flex;
+  justify-self: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.event_schedule_text {
+  text-align: center;
+}
+
+.event_schedule_text h2 {
+  border-bottom: 2px solid #E78830;
+}
+
+.event_schedule_text p {
+  padding-top: 10px;
+}
+
+/* Footer */
+
+.footer_content {
+  display: flex;
+  position: absolute;
+  background-color: #FFF8EE;
+  color: #222222;
+  justify-content: space-between;
+  width: 100%;
+  padding: 30px 50px 20px 50px;
+}
+
+.footer_logo h1 {
+  font-size: 30px;
+}
+
+.quick_links p {
+  text-decoration: none;
+  color: #222222;
+  cursor: pointer;
+  border-bottom: 1px solid transparent;
+}
+.quick_links p:hover{
+  color: #E78830;
+  border-bottom: 1px solid #E78830;
+  width: 80px;
+}
+.contact_text {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  align-items: baseline;
+  cursor: pointer;
+}
+.contact_us a:hover{
+color: #E78830 !important;
+}
+.contact_us a{
+  text-decoration: none;
+  color: #222222 !important;
 }
 
 
 
 
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 780px) {
+  .view_logo img {
+    width: 150px;
+    padding-left: 40px;
+  }
+}
 
 @media screen and (max-width: 480px) {
-   .carousel-item img {
+  .carousel-item img {
     height: 320px;
-}
   }
+
+  .view_logo img {
+    width: 150px;
+  }
+  footer{
+    display: none;
+  }
+}
